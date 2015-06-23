@@ -1,5 +1,2 @@
 #!/bin/bash
-while true; do
-  cat <( git --no-pager blame --date short chat.log | cut -f 1,2 -d ' ' --complement | sed -e 's/^[ ]*//' )
-  sleep 1
-done
+watch -n 1 --no-title -d "git --no-pager blame chat.log | sed 's/[+-]\{1\}[0-9]\{4\}[ ]*[0-9]*)[ ]//;s/^[[:alnum:]]*[ ]*(//'"
