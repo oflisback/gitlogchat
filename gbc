@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "$@" >> chat.log
+git commit -a -F <( echo "$@" )
