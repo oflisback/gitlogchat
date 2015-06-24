@@ -1,3 +1,7 @@
 #!/bin/bash
+#
+# Quick way to post to the chat while on the go
+# Make the script executable and add it to your path
+
 echo "$@" >> chat.log
-git commit -a -F <( echo "$@" )
+git commit -a -F <( echo "$@" ) > /dev/null
