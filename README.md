@@ -2,7 +2,7 @@
 
 It's a minimalistic shared server chat solution wrapping git log for user identification, timestamps and history.
 
-Each post to the chat results in an empty commit to the git repository. The viewer script shows a conventional chat log based on the git log output. By letting git do the heavy lifting both the viewer and post scripts are (with a little stretch ..) one-liners.
+Each post to the chat results in an empty commit to the git repository. The viewer script shows a conventional chat log based on the git log output. By letting git do the heavy lifting both the viewer and post scripts are one-liners.
 
 Output from viewer.sh looks something like this:
 
